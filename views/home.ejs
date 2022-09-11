@@ -1,7 +1,7 @@
 <%- include("partials/header") -%>
 <h1>Home</h1>
 <p><%= startingContent %></p>
-<% content.forEach(function(post){ %>
+<% content.forEach((post) => { %>
 <h1><%= post.title %></h1>
 <p><%= post.bodyContent.substring(0, 100) %><a href="/posts/<%=post.title%>">Read more</a></p>
 <% }); %>
